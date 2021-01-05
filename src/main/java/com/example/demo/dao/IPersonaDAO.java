@@ -1,4 +1,7 @@
 package com.example.demo.dao;
 
-public interface IPersonaDAO {
+import com.example.demo.model.Person;
+import org.springframework.data.repository.CrudRepository;
+
+public interface IPersonaDAO extends CrudRepository<Person, Long> {
 }
